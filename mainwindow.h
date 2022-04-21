@@ -26,16 +26,20 @@ public:
 private:
     Ui::MainWindow      *ui;
     QTimer               m_timer;
-    QTime                m_time;
 
     QImage               back;
     QImage               front;
 
+    unsigned char       *back_colors;
+    unsigned char       *front_colors;
+
     CalcType    calculation_type    = CalcType::NO_SSE;
     bool        success_load_flag   = false;
-    int         frame_count         = 0;
     int         x_shift             = 0;
     int         y_shift             = 0;
+    int         opacity             = 1;
+    double      calc_time           = 0;
+
 
 private slots:
     void paintEvent(QPaintEvent* event);
@@ -49,5 +53,6 @@ private slots:
     void on_show_preferences_cb_stateChanged(int arg1);
     void on_x_shift_sb_valueChanged(int arg1);
     void on_y_shift_sb_valueChanged(int arg1);
+    void on_op_dsb_valueChanged(double arg1);
 };
 #endif // MAINWINDOW_H

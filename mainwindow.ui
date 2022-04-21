@@ -20,7 +20,7 @@
       <x>10</x>
       <y>40</y>
       <width>140</width>
-      <height>121</height>
+      <height>150</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -30,6 +30,42 @@
         <string>Use SSE</string>
        </property>
       </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <family>Ubuntu</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>opacity</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="op_dsb">
+         <property name="font">
+          <font>
+           <family>Ubuntu</family>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="maximum">
+          <double>1.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.050000000000000</double>
+         </property>
+         <property name="value">
+          <double>1.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </item>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout">
@@ -55,7 +91,7 @@
           </font>
          </property>
          <property name="singleStep">
-          <number>10</number>
+          <number>20</number>
          </property>
         </widget>
        </item>
@@ -85,7 +121,7 @@
           </font>
          </property>
          <property name="singleStep">
-          <number>10</number>
+          <number>20</number>
          </property>
         </widget>
        </item>
