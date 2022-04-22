@@ -11,11 +11,11 @@
 const int   WIDTH           = 800;
 const int   HEIGHT          = 600;
 
-const int   BASE_Y_SHIFT    = 420;
+const int   BASE_Y_SHIFT    = 360;
 const int   BASE_X_SHIFT    = 240;
 
-const int   Y_SHIFT_USE_SSE = 220;
-const int   X_SHIFT_USE_SSE = 260;
+const int   Y_SHIFT_USE_SSE = 120;
+const int   X_SHIFT_USE_SSE = 320;
 
 const int   POINTS_PER_ITER = 4;
 const int   REPEATS_CALC    = 10;
@@ -27,7 +27,7 @@ const QColor  DEFAULT_COLOR = QColor(255, 0, 0);
 
 const QString DIR           = QString("/home/ivanbrekman/CProjects/ImageCancate/src/");
 const QString BACKGROUND    = QString(DIR + "images/Table.bmp");
-const QString FOREGROUND    = QString(DIR + "images/cat.png");
+const QString FOREGROUND    = QString(DIR + "images/archi.png");
 // ===========================================================================================
 
 unsigned char* get_pixels(QImage* image) {
